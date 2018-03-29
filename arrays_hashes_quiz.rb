@@ -147,7 +147,6 @@ users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
 
 # 10. Add another person to the users hash
-<<<<<<< HEAD
 # new_hash = {
 #   :daniel => {
 #   :twitter => "DanielChilds",
@@ -158,19 +157,6 @@ users["Erik"][:home_town]
 #
 # users.merge!(new_hash)
 # puts users
-=======
-new_hash = {
-  :daniel => {
-  :twitter => "DanielChilds",
-  :lottery_numbers => [12, 14, 33, 38, 9, 25],
-  :home_town => "London"
-}
-}
-
-
-users.merge!(new_hash)
-puts users
->>>>>>> 3e957378d237dd3fec9ca126127308a4ba76a4c0
 
 
 
@@ -211,7 +197,16 @@ northern_ireland_hash = {
 }
 
 united_kingdom.push(northern_ireland_hash)
-puts united_kingdom
+
 
 # 3. Use a loop to print the names of all the countries in the UK.
+# for capital_city in united_kingdom
+#   p "#{capital_city[:capital]}"
+# end
+
 # 4. Use a loop to find the total population of the UK.
+ for total_population in united_kingdom
+   if total_population[:population] > 40000000
+     p total_population[:population]
+   end
+ end
