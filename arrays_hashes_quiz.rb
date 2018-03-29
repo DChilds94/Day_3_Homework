@@ -47,9 +47,9 @@ stops.reverse!
 
 # 10. Print out all the stops using a for loop
 
-for train_stations in stops
-  puts train_stations
-end
+# for train_stations in stops
+#   puts train_stations
+# end
 
 
 ## Exercise B
@@ -115,15 +115,51 @@ users = {
 ### Complete these tasks:
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+users["Jonathan"][:twitter]
+
 # 2. Get Erik's hometown
+users["Erik"][:home_town]
+
 # 3. Get the array of Erik's lottery numbers
+users["Erik"][:lottery_numbers]
+
 # 4. Get the type of Avril's pet Monty
+
+
 # 5. Get the smallest of Erik's lottery numbers
+ users["Erik"][:lottery_numbers].to_a.min
+
 # 6. Return an array of Avril's lottery numbers that are even
+# users["Avril"][:lottery_numbers].each do |even_number|
+#   if even_number % 2 == 0
+#     puts even_number
+#   end
+# end
+
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+users["Erik"][:lottery_numbers] << 3
+
+
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"].replace({:home_town => "Edinburgh"})
+users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
+
 # 10. Add another person to the users hash
+new_hash = {
+  :daniel => {
+  :twitter => "DanielChilds",
+  :lottery_numbers => [12, 14, 33, 38, 9, 25],
+  :home_town => "London"
+}
+}
+
+
+users.merge!(new_hash)
+puts users
+
+
 
 
 ## Exercise C
