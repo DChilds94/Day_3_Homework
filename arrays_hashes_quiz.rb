@@ -147,6 +147,7 @@ users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
 
 # 10. Add another person to the users hash
+<<<<<<< HEAD
 # new_hash = {
 #   :daniel => {
 #   :twitter => "DanielChilds",
@@ -157,6 +158,19 @@ users["Erik"][:home_town]
 #
 # users.merge!(new_hash)
 # puts users
+=======
+new_hash = {
+  :daniel => {
+  :twitter => "DanielChilds",
+  :lottery_numbers => [12, 14, 33, 38, 9, 25],
+  :home_town => "London"
+}
+}
+
+
+users.merge!(new_hash)
+puts users
+>>>>>>> 3e957378d237dd3fec9ca126127308a4ba76a4c0
 
 
 
