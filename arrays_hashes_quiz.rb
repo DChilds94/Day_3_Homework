@@ -29,8 +29,6 @@ stops.delete("Livingston")
 # 6. Delete `"Cumbernauld"` from the array by index
 stops.delete_at(2)
 
-
-
 # 7. How many stops there are in the array?
 stops.length()
 #there are 7
@@ -40,10 +38,8 @@ stops[4]
 stops.fetch(4)
 # I have found 2 :)
 
-
 # 9. Reverse the positions of the stops in the array
 stops.reverse!
-
 
 # 10. Print out all the stops using a for loop
 
@@ -115,19 +111,19 @@ users = {
 ### Complete these tasks:
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-users["Jonathan"][:twitter]
+p users["Jonathan"][:twitter]
 
 # 2. Get Erik's hometown
-users["Erik"][:home_town]
+p users["Erik"][:home_town]
 
 # 3. Get the array of Erik's lottery numbers
-users["Erik"][:lottery_numbers]
+p users["Erik"][:lottery_numbers]
 
 # 4. Get the type of Avril's pet Monty
 
 
 # 5. Get the smallest of Erik's lottery numbers
- users["Erik"][:lottery_numbers].to_a.min
+ # p users["Erik"][:lottery_numbers].to_a.min
 
 # 6. Return an array of Avril's lottery numbers that are even
 # users["Avril"][:lottery_numbers].each do |even_number|
@@ -138,26 +134,32 @@ users["Erik"][:lottery_numbers]
 
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
-users["Erik"][:lottery_numbers] << 3
+# p users["Erik"][:lottery_numbers] << 3
 
 
 # 8. Change Erik's hometown to Edinburgh
-users["Erik"].replace({:home_town => "Edinburgh"})
-users["Erik"][:home_town]
+# p users["Erik"].replace({:home_town => "Edinburgh"})
+# p users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
+
 
 # 10. Add another person to the users hash
 # new_hash = {
 #   :daniel => {
 #   :twitter => "DanielChilds",
 #   :lottery_numbers => [12, 14, 33, 38, 9, 25],
-#   :home_town => "London"
+#   :home_town => "London",
+#   :pets => [
+#     {
+#       :name => "Bez",
+#       :species => "Dog"
+#     }
+#   ]
 # }
 # }
 #
 # users.merge!(new_hash)
 # puts users
-
 
 
 
@@ -205,8 +207,8 @@ united_kingdom.push(northern_ireland_hash)
 # end
 
 # 4. Use a loop to find the total population of the UK.
- for total_population in united_kingdom
-   if total_population[:population] > 40000000
-     p total_population[:population]
-   end
- end
+ # for total_population in united_kingdom
+ #   if total_population[:population] > 40000000
+ #     p total_population[:population]
+ #   end
+ # end
